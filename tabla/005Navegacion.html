@@ -1,30 +1,51 @@
 <html>
-    <head>
-        <style>
-        ul {
-            list-style-type: none;
-            padding:0px;
-            margin:0px;
-            width: 250px;
 
-        }
-        li a {
-            color:white;
-            background-color: rgb(61, 50, 214);
-            display:block;
-            text-decoration: none;
-            padding: 20px;
+<head>
+  <style>
+    ul {
+      list-style-type: none;
+      padding: 0px;
+      margin: 0px;
+      width: 250px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-        }         
-        </style>
-    </head>
-    <body>
-      <ul>
-        <li><a href="http://www.elpais.es">EL PAIS</a></li>
-        <li><a href="http://www.elmundo.es">EL MUNDO</a></li>
-        <li><a href="http://www.lavanguardia.com">LA VANGUARDIA</a></li>
-        <li><a href="http://www.elcorreo.com">EL CORREO</a></li>
-        <li><a href="http://www.eldiariomontanes.es">EL DIARIO MONTAÑES</a></li>          
-      </ul>
-    </body>
+    li {
+      border: 1px solid rgb(61, 50, 214);      
+    }
+  
+    li a {
+      color: white;
+      background-color: rgb(61, 50, 214);
+      display: block;
+      text-decoration: none;
+      padding: 20px;
+    }
+
+    li a:hover {
+      background-color: rgb(180, 204, 179);
+      color: black;
+    }
+
+    #primero a{     
+      border-radius: 10px 10px 0px 0px;            
+    }
+   
+    #ultimo a {
+      border-radius: 0px 0px 10px 10px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li id="primero"><a href="http://www.elpais.es">EL PAIS</a></li>
+    <li><a href="http://www.elmundo.es">EL MUNDO</a></li>
+    <li><a href="http://www.lavanguardia.com">LA VANGUARDIA</a></li>
+    <li><a href="http://www.elcorreo.com">EL CORREO</a></li>
+    <li id="ultimo"><a href="http://www.eldiariomontanes.es">EL DIARIO MONTAÑES</a></li>
+  </ul>
+</body>
+
 </html>
