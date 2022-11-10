@@ -1,0 +1,1 @@
+delete from personas where DNI="4"

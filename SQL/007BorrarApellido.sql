@@ -1,0 +1,1 @@
+delete from personas where Apellidos="Gómez"
