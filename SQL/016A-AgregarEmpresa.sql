@@ -1,0 +1,1 @@
+update facturas set Empresa="EmpresaA"
