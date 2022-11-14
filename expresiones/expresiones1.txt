@@ -1,0 +1,27 @@
+factura1.doc es la factura de juan
+factura2.doc es la factura de luis
+factura3.doc es la factura de ana
+//expresion
+factura..?\.doc
+
+Factura1.txt bla bla bla
+Factura2.txt bla bla
+factura3.doc bla
+facturas.txt ble
+factura5.doc blo
+//expresion
+[Ff]actura.\....
+
+factura99.doc ble bli blo
+//expresion
+[Ff]actura..?\....
+//expresion para seleccionar en orden numerico
+[Ff]actura[0123456789]\....
+[Ff]actura[0-9]\....
+[Ff]actura[\d]\....
+
+factura99.doc
+[Ff]actura\d\d\....
+
+factura112.doc
+[Ff]actura\d\d\d\....
