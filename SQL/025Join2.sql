@@ -3,7 +3,9 @@
 /*join*/
 /*select * from personita, regalo*/
 /*SELECT * from personita INNER JOIN regalo on personita.nombre=regalo.Personita_Nombre*/
-SELECT nombre as NombreNiño,
+SELECT
+    nombre as NombreNiño,
     descripción as NombreRegalo
-from personita
+from
+    personita
     INNER JOIN regalo on personita.nombre = regalo.Personita_Nombre

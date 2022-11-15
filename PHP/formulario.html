@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf8" />
+    <script type="text/javascript">
+        function enviar() {
+            var formulario = document.getElementById("formulario");
+            if (formulario.reportValidity()){
+                alert("todo ok");
+                return true;
+            } else {
+                return false;
+            }
+        }
+    </script>
+    <title>Factura</title>
+</head>
+
+<body>
+    <form id="formulario" onsubmit="enviar()" action="insertar.php">
+        <p>Numero<input type="text" name="numero" required pattern="\d{1,2}" placeholder="introduce numero" /></p>
+        <p>Concepto<input type="text" name="Concepto" required pattern="[a-zA-Z]{3,10}"
+                placeholder="introduce concepto" /></p>
+        <p>Importe<input type="text" name="importe" required pattern="\d{1,4}" placeholder="introduce importe" /></p>
+        <input type="submit" value="Aceptar" />
+    </form>
+</body>
+
+</html>

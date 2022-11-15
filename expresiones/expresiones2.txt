@@ -1,0 +1,26 @@
+entregamos la compra a 10142812L
+entregamos la compra a 20122812Z
+entregamos la compra a 10222812L
+entregamos la compra a 10292812P
+//expresion
+\d{7,8}[A-Za-z]
+
+entregamos la compra a 10222812-L
+\d{7,8}-?[A-Za-z]
+
+sube pepiro.txt
+sube otro.xls
+sube este.doc
+//expresion
+[a-z]{2,6}\.[a-z]{3}
+
+sube pepito.txt?01
+sube otro.xls?02
+sube este.doc?03
+//expresion
+[a-z]{2,6}\.[a-z]{3}\?\d{2}
+
+pedro.txt
+pedro txt
+//expresion
+[a-z]{2,5}[\s\.]txt
