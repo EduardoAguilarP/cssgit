@@ -1,14 +1,27 @@
-<!DOCTYPE html>
-<html>
-    <body>
-        <table>
-            <td>
-                <tr>1</tr>
-                <tr>ordenador</tr>
-                <tr>200</tr>
-                <tr>EmpresaA</tr>
-            </td>
-        </table>
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "curso2";
 
-    </body>
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+$sql = "select * from Facturas";
+$resultado = $conn->query($sql);
+?>
+
+<html>
+<body>
+<table>
+<?php while($fila = $resultado->fetch_assoc()){?>
+
+    <tr>
+      <td><?=$fila["numero"]?></td>
+      <td><?=$fila["concepto"]?></td>
+      <td><?=$fila["importe"]?></td>
+</tr>
+<?php}?>
+</table>
+</body>
 </html>
+<?php $conn->close();?>
