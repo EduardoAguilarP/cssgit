@@ -11,6 +11,10 @@ $basedatos="curso2";
 //ese objeto es la conexion se mete en $conn
 $conn = new mysqli($servidor, $usuario, $clave, $basedatos);
 //defino una consulta SQL que es un texto
+if (!empty($_GET["orden"])){
+  echo $_GET["orden"];
+}
+
 $sql = "select * from facturas";
 //conexion a la base de datos que la ejecute
 //viene en la variable resultado
@@ -20,6 +24,13 @@ $resultado = $conn->query($sql);
 <html>
 <body>
 <table>
+  <tr>
+    <th><a href="?orden=numero">Numero</a></th>
+    <th><a href="?orden=concepto">Concepto</a></th>
+    <th><a href="?orden=importe">Importe</a></th>
+  </tr>
+  
+
 <?php while($fila = $resultado->fetch_assoc()){?>
   <tr>
     <td><?=$fila["numero"]?></td>
