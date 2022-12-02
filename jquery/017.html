@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .gastoalto {
+        background-color: rgb(226, 111, 111);
+        color: white;
+      }
+    </style>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("tr td:last-child").each(function () {
+          var Importe = parseInt($(this).text());
+          if (Importe > 300) {
+            $(this).addClass("gastoalto");
+          }
+        });
+      });
+    </script>
+    <title>017</title>
+  </head>
+
+  <body>
+    <table>
+      <tr>
+        <th>Numero</th>
+        <th>Concepto</th>
+        <th>Importe</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>televisor</td>
+        <td>500</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>ordenador</td>
+        <td>200</td>
+      </tr>
+    </table>
+  </body>
+</html>

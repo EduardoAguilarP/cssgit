@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>016</title>
+    <style>
+        img {
+            opacity: 50%;
+        }
+        .iluminar {
+            opacity: 100%;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            
+           $("img").click(function() {
+            if(!$(this).hasClass("iluminar")) {
+                $(this).addClass("iluminar");
+            } else {
+                $(this).removeClass("iluminar");
+            }
+            
+           });
+            
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <img src="paisaje.jpg" width="30%" height="30%"/>
+    <img src="paisaje.jpg" width="30%" height="30%"/>
+    <img src="paisaje.jpg" width="30%" height="30%"/>
+    
+    
+</body>
+
+</html>
