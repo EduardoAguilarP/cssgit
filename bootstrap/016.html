@@ -20,10 +20,9 @@
     <style></style>
     <script type="text/javascript">
       $(document).ready(function () {
-        $("ul a").click(function() {
-            $("ul a").removeClass("active");
-            $(this).addClass("active");
-        })
+       $(".dropdown-toggle").click(function () {
+        $(".dropdown-menu").toggle();
+       })
       })
     </script>
     <title>Menu</title>
@@ -31,17 +30,30 @@
 
   <body>
     <div class="container">
-      <ul class="nav nav-pills">
+      <ul class="nav nav-tabs">
         <li class="nav-item" role="presentation">
-          <a data-toggle="pill" class="nav-link active" href="#">Inicio</a>
+          <a data-toggle="tab" class="nav-link" href="#"> Inicio </a>
+        </li>
+        <li role="presentation" class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            data-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-haspopup="false"
+            aria-expanded="true"
+          >
+          SubMenu <span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">submenu1</a>
+            <a class="dropdown-item" href="#">submenu2</a>
+          </div>
         </li>
         <li class="nav-item" role="presentation">
-          <a data-toggle="pill" class="nav-link" href="#">Opcion 1</a>
+          <a data-toggle="tab" class="nav-link" href="#"> Opcion 2 </a>
         </li>
-        <li class="nav-item" role="presentation">
-          <a data-toggle="pill" class="nav-link" href="#">Opcion 2</a>
-        </li>
-      </ul>
+      </ul>      
     </div>
   </body>
 </html>
