@@ -21,9 +21,10 @@
     <script type="text/javascript">
       $(document).ready(function () {
         $("ul a").click(function() {
-            alert("has pulsado");
+            $("ul a").removeClass("active");
+            $(this).addClass("active");
         })
-      });
+      })
     </script>
     <title>Menu</title>
   </head>
